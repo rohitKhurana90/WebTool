@@ -7,17 +7,13 @@ namespace WebTool.Models
 {
     public class TestCase
     {
-        TestCase() {
-            name = "Rohit";
-        }
-        public String name { get; set; }
 
-        public static TestCase[] getData() {
-
-            TestCase[] a = new TestCase[1];
-            a[0] = new TestCase();
-            return a;  
-       }
+        public String TestCaseID { get; set; }
+        public String TestCaseName{ get; set; }
+        public String IterationType { get; set; }
+        public String IterationValue { get; set; }
+        public String Run { get; set; }
+        public String Status { get; set; }        
 
     }
 

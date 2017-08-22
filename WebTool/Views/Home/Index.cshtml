@@ -387,35 +387,12 @@
                                     <tr role="row"><th tabindex="0" class="sorting_asc" aria-controls="example1" style="width: 253.07px;" aria-label="Rendering engine: activate to sort column descending" aria-sort="ascending" rowspan="1" colspan="1">Test Case ID</th><th tabindex="0" class="sorting" aria-controls="example1" style="width: 310.7px;" aria-label="Browser: activate to sort column ascending" rowspan="1" colspan="1">Description</th><th tabindex="0" class="sorting" aria-controls="example1" style="width: 274.35px;" aria-label="Platform(s): activate to sort column ascending" rowspan="1" colspan="1">Iteration Type</th><th tabindex="0" class="sorting" aria-controls="example1" style="width: 218.21px;" aria-label="Engine version: activate to sort column ascending" rowspan="1" colspan="1">Iteration Value</th><th tabindex="0" class="sorting" aria-controls="example1" style="width: 160.17px;" aria-label="CSS grade: activate to sort column ascending" rowspan="1" colspan="1">Run Status</th></tr>
                                 </thead>
                                 <tbody>
-                                    <tr class="odd" role="row">
-                                        <td class="sorting_1">lSYM-TC001</td>
-                                        <td>Test Description 1</td>
-                                        <td>Run All</td>
-                                        <td>1</td>
-                                        <td>Pass</td>
+                                    <tr class="even" role="row" ng-repeat="td in tableDataVal">                                       
+                                        <td>{{td.TestCaseID}}</td>
+                                        <td>{{td.TestCaseName}}</td>
+                                        <td>{{td.IterationType}}</td>
+                                        <td>{{td.IterationValue}}</td>
                                     </tr>
-                                    <tr class="even" role="row" ng-repeat="td in tableData">
-                                        <td class="sorting_1">{{td.id}}</td>
-                                        <td>{{td.name}}</td>
-                                        <td>{{td.title}}</td>
-                                        <td>1</td>
-                                        <td>Pass</td>
-                                    </tr>
-                                    <tr class="odd" role="row">
-                                        <td class="sorting_1">lSYM-TC003</td>
-                                        <td>Test Description 3</td>
-                                        <td>Run All</td>
-                                        <td>1</td>
-                                        <td>Pass</td>
-                                    </tr>
-                                    <tr class="even" role="row">
-                                        <td class="sorting_1">lSYM-TC004</td>
-                                        <td>Test Description 4</td>
-                                        <td>Run All</td>
-                                        <td>1</td>
-                                        <td>Fail</td>
-                                    </tr>
-
                                 </tbody>
 
                             </table>

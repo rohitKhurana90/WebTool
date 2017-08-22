@@ -10,7 +10,7 @@ using System.Configuration;
 
 namespace WebTool.Models
 {
-
+    [Serializable]
     public class FetchData
     {
         string abd = ConfigurationManager.AppSettings["Sbd"];
@@ -22,7 +22,7 @@ namespace WebTool.Models
             // XLSX - Excel 2007, 2010, 2012, 2013
             props["Provider"] = "Microsoft.ACE.OLEDB.12.0;";
             props["Extended Properties"] = "Excel 12.0 XML";
-            props["Data Source"] = "C:\\MyExcel.xlsx";
+            props["Data Source"] = "E:\\TestSuite.xlsx";
 
             // XLS - Excel 2003 and Older
             //props["Provider"] = "Microsoft.Jet.OLEDB.4.0";
@@ -42,8 +42,8 @@ namespace WebTool.Models
             return sb.ToString();
         }
 
-
-        private DataSet ReadExcelFile()
+       
+        public DataSet ReadExcelFile()
         {
             DataSet ds = new DataSet();
 
